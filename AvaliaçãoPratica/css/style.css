@@ -1,0 +1,143 @@
+body {
+    background: #565353;
+    color: white;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background: #589ca2;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav a:hover { 
+    color: lime;
+    transition: 0.3s;
+}
+
+.banner {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.card-td1 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+.card {
+    background: #222222;
+    padding: 10px;
+    border-radius: 12px;
+    width: 180px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: transform 200ms ease;
+    flex: 0 0 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.card-img {
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 8px;
+    transition: transform 200ms ease;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #000;
+    margin-top: 0;
+    border-top: none;
+    box-shadow: none;
+}
+.edicao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.edicao .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    max-width: 720px;
+}
+
+.edicao .grid .card {
+    margin: 0;
+    flex: 0 0 180px;
+}
+
+.edicao .grid .card .card-img {
+    width: auto;
+    max-width: 140px;
+    max-height: 120px;
+    margin: 0 auto;
+    object-fit: contain;
+    display: block;
+}
+
+.cards-td1 {
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    gap: 40px 60px;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.cards > h2 {
+    text-align: center;
+    width: 100%;
+    margin: 12px 0 18px;
+    font-weight: 600;
+}
+
+.cards .texto {
+    max-width: 760px;
+    margin: 0.6rem auto 1.2rem;
+    text-align: center;
+    line-height: 1.6;
+    padding: 0 16px;
+}
